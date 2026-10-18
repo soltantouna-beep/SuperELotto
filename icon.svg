@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Sfondi sfumati moderni ed eleganti -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.65"/>
+      <stop offset="45%" stop-color="#022c22" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1528"/>
+      <stop offset="50%" stop-color="#031a16"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Gradienti Smeraldo e Oro per Lotto & SuperEnalotto -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="40%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <linearGradient id="sphereGrad" x1="25%" y1="20%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#1e3a34"/>
+      <stop offset="35%" stop-color="#0a231f"/>
+      <stop offset="75%" stop-color="#021411"/>
+      <stop offset="100%" stop-color="#010807"/>
+    </linearGradient>
+
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#059669" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Filtri di luminescenza e profondità -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="dropShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Sfondo Principale (Adatto a Icone Standard e Maskable per Xiaomi / Android) -->
+  <rect width="512" height="512" rx="112" fill="url(#cardGrad)"/>
+  <rect width="512" height="512" rx="112" fill="url(#bgGlow)"/>
+  <rect width="502" height="502" x="5" y="5" rx="107" fill="none" stroke="url(#rimGrad)" stroke-width="3" stroke-opacity="0.5"/>
+
+  <!-- Cerchi geometrici concentrici di probabilità (Lotto & Ruote) -->
+  <g filter="url(#dropShadow)">
+    <circle cx="256" cy="226" r="150" fill="none" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="8 6"/>
+    <circle cx="256" cy="226" r="126" fill="none" stroke="#34d399" stroke-width="2" stroke-opacity="0.4"/>
+    <circle cx="256" cy="226" r="102" fill="none" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- 6 Nodi Geometrici Oro (La Sestina SuperEnalotto) -->
+  <g filter="url(#softGlow)">
+    <!-- Posizioni a 60° sulla circonferenza r=126 -->
+    <circle cx="256" cy="100" r="7.5" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="365" cy="163" r="7.5" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="365" cy="289" r="7.5" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="256" cy="352" r="7.5" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="147" cy="289" r="7.5" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="147" cy="163" r="7.5" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- 5 Linee Radiali Geometriche Eleganti (La Cinquina del Lotto) -->
+  <g opacity="0.45" stroke="#34d399" stroke-width="1.5" stroke-linecap="round">
+    <line x1="256" y1="226" x2="256" y2="100"/>
+    <line x1="256" y1="226" x2="365" y2="163"/>
+    <line x1="256" y1="226" x2="365" y2="289"/>
+    <line x1="256" y1="226" x2="147" y2="289"/>
+    <line x1="256" y1="226" x2="147" y2="163"/>
+  </g>
+
+  <!-- Sfera Centrale (Estrazione / Nucleo Algoritmico ICA) -->
+  <g filter="url(#dropShadow)">
+    <circle cx="256" cy="226" r="82" fill="url(#sphereGrad)" stroke="#10b981" stroke-width="3.5"/>
+    
+    <!-- Bagliore interno tridimensionale -->
+    <ellipse cx="232" cy="188" rx="42" ry="24" fill="#6ee7b7" fill-opacity="0.18" transform="rotate(-25 232 188)"/>
+    <path d="M 198 185 A 64 64 0 0 1 300 185" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-opacity="0.75"/>
+    
+    <!-- Icona geometrica combinatoria centrale: Simbolo dell'Infinito / Matrice -->
+    <path d="M 226 226 C 210 208, 192 212, 192 226 C 192 240, 210 244, 226 226 C 242 208, 260 212, 260 226 C 260 240, 242 244, 226 226 Z" 
+          fill="none" stroke="url(#emeraldGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(14, 0) scale(1.08)"/>
+
+    <!-- Punti stella interni -->
+    <circle cx="256" cy="226" r="3.5" fill="#fef08a"/>
+  </g>
+
+  <!-- Badge Minimale Moderno "v32 Pro" -->
+  <g filter="url(#dropShadow)">
+    <!-- Contenitore pillola scura con bordo smeraldo e riflessi -->
+    <rect x="156" y="386" width="200" height="52" rx="26" fill="#031613" stroke="url(#emeraldGrad)" stroke-width="2.5"/>
+    
+    <!-- Dettaglio luminoso pillola -->
+    <rect x="160" y="389" width="192" height="23" rx="12" fill="#ffffff" fill-opacity="0.05"/>
+    
+    <!-- Micro gemma verde attiva -->
+    <circle cx="184" cy="412" r="5" fill="#34d399" filter="url(#softGlow)"/>
+    <circle cx="184" cy="412" r="2.5" fill="#ffffff"/>
+
+    <!-- Tipografia pulita, moderna e ad alto contrasto "v32 Pro" -->
+    <text x="254" y="420" 
+          font-family="system-ui, -apple-system, 'SF Pro Display', Roboto, sans-serif" 
+          font-size="22" 
+          font-weight="900" 
+          letter-spacing="2.5" 
+          fill="#ffffff" 
+          text-anchor="middle">
+      v32 <tspan fill="#34d399">PRO</tspan>
+    </text>
+  </g>
+</svg>
